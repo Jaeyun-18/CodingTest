@@ -15,7 +15,7 @@ bool solution(vector<string> phone_book) {
     return true;
 }
 ```
-- <string>.substr(시작위치, 길이) -> string에서 추출하는 method
+- string.substr(시작위치, 길이) -> string에서 추출하는 method
 ---
 ```cpp
 #include <string>
