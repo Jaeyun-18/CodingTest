@@ -39,3 +39,4 @@ int solution(string numbers) {
 - string을 int로 변환 stoi
 - 소수판별은 for문 사용해서 해당수의 제곱근 보다 아래의 숫자들 중에 나머지가 0인게 있으면 false
 - 순열생성은 dfs 형태로 진행하거나 next_permutation이라는 순열 return 함수가 algorithm 헤더에 존재
+- set은 자동으로 중복값을 값을 삭제함
