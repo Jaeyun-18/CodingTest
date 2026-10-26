@@ -8,13 +8,9 @@ using namespace std;
 vector<int> solution(vector<int> progresses, vector<int> speeds) {
     vector<int> answer;
     queue<int> q;
-    
-    int t=0;
+
     for(int i=0; i<progresses.size(); i++) {
-        t = (100-progresses[i]) / speeds[i];
-        if((100-progresses[i]) % speeds[i] != 0) t++;
-        q.push(t);
-        t=0;
+        q.push((100 - progresses[i] + speeds[i] - 1) / speeds[i]);
     }
     
     int cur = 0;
